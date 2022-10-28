@@ -1,0 +1,76 @@
+/* IMPORTACIÓN FONT POPPINS GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* IMPORTACIÓN FONT CHAKRA PATCH */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* IMPORTACIÓN FONT BEBAS NEUE */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* VARIABLES GENERALES */
+:root{
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --black-bg-primary: #141414;
+    --green-primary: #00FF93;
+    --yellow-primary: #00FF93;
+    --purple-bitmx: #9100FF ;
+    --green-bitmx: #00FF00 ;
+    --yellow-bitmx:#FFEB00;
+    --pink-bitmx: #FF00F1 ;
+    --grey-light: #A3A3A3;
+    --grey-text-inputs: #7C7C7C;
+    --black-secoond: #1A1A1A;
+    --grey-bg-inputs: #313131;
+    --poppins-font: 'Poppins', sans-serif;
+    --chakra-font: 'Chakra Petch', sans-serif;
+    --bebas-font:'Bebas Neue', cursive;
+}
+body{
+    background-color: var(--black-bg-primary)!important ;
+
+    margin: 0;
+    padding: 1rem;
+}
+.button{
+    font-weight: 600;
+    font-family: var(--bebas-font);
+    /* padding: 0.75rem 0.375rem; */
+    font-size: 1.125rem;
+    line-height: 1.5;
+    padding: 0.93rem 3rem;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    vertical-align: middle;
+}
+.button_Primary{
+    color: var(--black-color);
+    background-color: var(--green-primary);
+    border-radius: 0;
+    
+}
+.button_Primary:hover{
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+.button_Secondary{
+    background-color: var(--black-bg-primary);
+    color: var(--green-primary);
+    border: 1px solid var(--green-primary);
+}
+.button_Secondary:hover{
+    color: var(--green-primary);
+    background-color: var(--black-secoond);
+    box-shadow: 0px 0px 6px 0px rgba(0, 255, 147, 0.4);
+
+}
+.button_Link{
+    color: var(--green-primary);
+}
+.button_Link:hover{
+    color: var(--green-primary);
+    text-decoration: underline 2px var(--green-primary);
+    text-underline-offset: 1.5rem;
+}
+.button_Terciary{    color: var(--green-primary);
+}
